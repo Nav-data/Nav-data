@@ -561,17 +561,6 @@ const aircraftList = [
   border-color: rgb(var(--accent-color));
 }
 
-[data-theme="light"] .cta-button {
-  color: rgb(var(--foreground-rgb));
-  border-color: rgba(var(--foreground-rgb), 0.3);
-}
-
-[data-theme="light"] .cta-button:hover {
-  background-color: rgba(var(--foreground-rgb), 0.1);
-  border-color: rgb(var(--accent-color));
-  color: rgb(var(--accent-color));
-}
-
 /* Container */
 .container {
   max-width: 80rem;
