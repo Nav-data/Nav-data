@@ -844,11 +844,32 @@ const aircraftList = [
   color: rgb(var(--foreground-rgb));
   text-decoration: none;
   transition: all 0.3s ease;
+  position: relative;
+  padding: 0.25rem 0;
+  display: inline-block;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(var(--accent-color));
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
 
 .footer-link:hover {
   opacity: 1;
   color: rgb(var(--accent-color));
+}
+
+.footer-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .footer-social {
